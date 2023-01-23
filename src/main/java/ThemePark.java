@@ -7,13 +7,13 @@ import stalls.IceCreamStall;
 import stalls.TobaccoStall;
 
 public class ThemePark {
-    private Dodgems dodgems;
-    private Park park;
-    private Playground playground;
-    private RollerCoaster rollerCoaster;
-    private CandyflossStall candyflossStall;
-    private IceCreamStall iceCreamStall;
-    private TobaccoStall tobaccoStall;
+    private static Dodgems dodgems;
+    private static Park park;
+    private static Playground playground;
+    private static RollerCoaster rollerCoaster;
+    private static CandyflossStall candyflossStall;
+    private static IceCreamStall iceCreamStall;
+    private static TobaccoStall tobaccoStall;
 
     public ThemePark(Dodgems dodgems, Park park, Playground playground, RollerCoaster rollerCoaster,
                      CandyflossStall candyflossStall, IceCreamStall iceCreamStall, TobaccoStall tobaccoStall){
@@ -27,6 +27,33 @@ public class ThemePark {
 
     }
 
+    public static Dodgems getDodgems() {
+        return dodgems;
+    }
+
+    public static Park getPark() {
+        return park;
+    }
+
+    public static Playground getPlayground() {
+        return playground;
+    }
+
+    public static RollerCoaster getRollerCoaster() {
+        return rollerCoaster;
+    }
+
+    public static CandyflossStall getCandyflossStall() {
+        return candyflossStall;
+    }
+
+    public static IceCreamStall getIceCreamStall() {
+        return iceCreamStall;
+    }
+
+    public static TobaccoStall getTobaccoStall() {
+        return tobaccoStall;
+    }
 }
 
 

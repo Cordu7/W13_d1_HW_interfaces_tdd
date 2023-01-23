@@ -20,11 +20,13 @@ public class ThemeParkTest {
     CandyflossStall candyflossStall;
     IceCreamStall iceCreamStall;
     TobaccoStall tobaccoStall;
+    ThemePark themePark;
 
 
 
     @Before
     public void before(){
+
         dodgems = new Dodgems("Bumper Cars", 5);
         park = new Park("Leafy Meadows", 9);
         playground = new Playground("Fun Zone", 7);
@@ -32,34 +34,28 @@ public class ThemeParkTest {
         candyflossStall = new CandyflossStall("Candy Land", 3,"Harry Belafonte", ParkingSpot.A1);
         iceCreamStall = new IceCreamStall("Dream Cones", 4,"Vanilla Ice", ParkingSpot.A4);
         tobaccoStall = new TobaccoStall("Jacks Drum", 4,"Jack Jarvis", ParkingSpot.B1);
+        themePark = new ThemePark(dodgems, park, playground, rollerCoaster, candyflossStall, iceCreamStall, tobaccoStall);
     }
 
     @Test
-    public void hasDodgems() {
-        assertEquals(dodgems, ThemePark.getDodgems());}
+    public void hasDodgems() {assertEquals(dodgems, ThemePark.getDodgems());}
 
     @Test
-    public void hasPark() {
-        assertEquals(park, ThemePark.getPark());}
+    public void hasPark() {assertEquals(park, ThemePark.getPark());}
 
     @Test
-    public void hasPlayground() {
-        assertEquals(playground, ThemePark.getPlayground());}
+    public void hasPlayground() {assertEquals(playground, ThemePark.getPlayground());}
 
     @Test
-    public void hasRollerCoaster() {
-        assertEquals(rollerCoaster, ThemePark.getRollerCoaster());}
+    public void hasRollerCoaster() {assertEquals(rollerCoaster, ThemePark.getRollerCoaster());}
 
     @Test
-    public void hasCandyFlossStall() {
-        assertEquals(candyflossStall, ThemePark.getCandyflossStall());}
+    public void hasCandyFlossStall() {assertEquals(candyflossStall, ThemePark.getCandyflossStall());}
 
     @Test
-    public void hasIceCreamStall() {
-        assertEquals(iceCreamStall, ThemePark.getIceCreamStall());}
+    public void hasIceCreamStall() {assertEquals(iceCreamStall, ThemePark.getIceCreamStall());}
 
     @Test
-    public void hasTobaccoStall() {
-        assertEquals(tobaccoStall, ThemePark.getTobaccoStall());}
+    public void hasTobaccoStall() {assertEquals(tobaccoStall, ThemePark.getTobaccoStall());}
 
 }
